@@ -3,7 +3,7 @@
 
 #include "stdafx.h"
 #include "NativeDll.h"
-#include "..\..\NativeLib\HQF.Tutorial.Pinvoke.NativeLib\Worker.h"
+#include "..\..\NativeLibrary\HQF.Tutorial.Pinvoke.NativeLib\Worker.h"
 #include <map>
 
 using namespace std;
