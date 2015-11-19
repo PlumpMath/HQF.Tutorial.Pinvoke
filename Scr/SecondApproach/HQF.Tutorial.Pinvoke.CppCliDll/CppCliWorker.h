@@ -1,6 +1,6 @@
 #pragma once
 
-#include "..\..\NativeLib\HQF.Tutorial.Pinvoke.NativeLib\Worker.h"
+#include "..\..\NativeLibrary\HQF.Tutorial.Pinvoke.NativeLib\Worker.h"
 
 namespace CppCliDll
 {

@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HQF.Tutorial.Pinvoke.ManagedDll\HQF.Tutorial.Pinvoke.ManagedDll.csproj">
+    <ProjectReference Include="..\SecondApproach\HQF.Tutorial.Pinvoke.ManagedDll\HQF.Tutorial.Pinvoke.ManagedDll.csproj">
       <Project>{def69d3a-3b64-47ee-80df-62db6ec356c2}</Project>
       <Name>HQF.Tutorial.Pinvoke.ManagedDll</Name>
     </ProjectReference>
@@ -65,7 +65,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(SolutionDir)$(Configuration)\HQF.Tutorial.Pinvoke.NativeDll.dll" "$(SolutionDir)TestsConsole\bin\$(Configuration)\"  /S /Y</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(SolutionDir)$(Configuration)\HQF.Tutorial.Pinvoke.NativeDll.dll" "$(TargetDir)"  /S /Y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

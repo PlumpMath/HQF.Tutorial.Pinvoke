@@ -9,31 +9,31 @@ namespace HQF.Tutorial.Pinvoke.ManagedDll
 
         #region UnmanagedDll imports
 
-        [DllImport("NativeDll.dll", EntryPoint = "CreateWorker")]
+        [DllImport("HQF.Tutorial.Pinvoke.NativeDll.dll", EntryPoint = "CreateWorker")]
         protected static extern uint _CreateWorker();
 
-        [DllImport("NativeDll.dll", EntryPoint = "DeleteWorker", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("HQF.Tutorial.Pinvoke.NativeDll.dll", EntryPoint = "DeleteWorker", CallingConvention = CallingConvention.Cdecl)]
         protected static extern void _DeleteWorker(uint workerId);
 
-        [DllImport("NativeDll.dll", EntryPoint = "Start", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("HQF.Tutorial.Pinvoke.NativeDll.dll", EntryPoint = "Start", CallingConvention = CallingConvention.Cdecl)]
         protected static extern void _Start(uint workerId);
 
-        [DllImport("NativeDll.dll", EntryPoint = "Stop", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("HQF.Tutorial.Pinvoke.NativeDll.dll", EntryPoint = "Stop", CallingConvention = CallingConvention.Cdecl)]
         protected static extern void _Stop(uint workerId);
 
-        [DllImport("NativeDll.dll", EntryPoint = "QueueDemoWorkerTasks", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("HQF.Tutorial.Pinvoke.NativeDll.dll", EntryPoint = "QueueDemoWorkerTasks", CallingConvention = CallingConvention.Cdecl)]
         protected static extern void _QueueDemoWorkerTasks(uint workerId);
 
-        [DllImport("NativeDll.dll", EntryPoint = "QueueWorkerTask", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("HQF.Tutorial.Pinvoke.NativeDll.dll", EntryPoint = "QueueWorkerTask", CallingConvention = CallingConvention.Cdecl)]
         protected static extern void _QueueWorkerTask(uint workerId, uint outerLoopCount, uint innerLoopCount);
 
-        [DllImport("NativeDll.dll", EntryPoint = "ExecuteWorkerTask", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("HQF.Tutorial.Pinvoke.NativeDll.dll", EntryPoint = "ExecuteWorkerTask", CallingConvention = CallingConvention.Cdecl)]
         protected static extern void _ExecuteWorkerTask(uint workerId, uint outerLoopCount, uint innerLoopCount);
 
-        [DllImport("NativeDll.dll", EntryPoint = "PrintStatistics", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("HQF.Tutorial.Pinvoke.NativeDll.dll", EntryPoint = "PrintStatistics", CallingConvention = CallingConvention.Cdecl)]
         protected static extern void _PrintStatistics(uint workerId);
 
-        [DllImport("NativeDll.dll", EntryPoint = "GetWorkingSeconds", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("HQF.Tutorial.Pinvoke.NativeDll.dll", EntryPoint = "GetWorkingSeconds", CallingConvention = CallingConvention.Cdecl)]
         protected static extern double _GetWorkingSeconds(uint workerId);
 
         #endregion
